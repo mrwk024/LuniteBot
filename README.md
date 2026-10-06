@@ -13,6 +13,46 @@ Before you begin, make sure you have:
 -   **MRWK.zip**
 -   **WinRAR** or another program that can open `.jar` files
 
+## Lunite Client Location
+
+The Lunite Client files are normally located in:
+
+```text
+%APPDATA%\Lunite-Repo
+```
+
+The `%APPDATA%` variable automatically points to your Windows user's
+`AppData\Roaming` folder.
+
+The full path normally looks like:
+
+```text
+C:\Users\<YourWindowsUsername>\AppData\Roaming\Lunite-Repo
+```
+
+> **Important:** Do not copy the path above literally. Replace
+> `<YourWindowsUsername>` with your Windows username, or simply use
+> `%APPDATA%\Lunite-Repo` instead.
+
+### Recommended method
+
+The easiest way to open the Lunite Client folder is:
+
+1. Press **Windows + R**.
+2. Enter:
+
+```text
+%APPDATA%\Lunite-Repo
+```
+
+3. Press **Enter**.
+
+Windows will automatically open the correct folder for your Windows
+user account.
+
+Inside this folder, you should find the appropriate
+`Lunite-Client-Hd.jar` file.
+
 ## Installation
 
 ### Step 1 --- Extract MRWK.zip
@@ -21,38 +61,52 @@ Extract `MRWK.zip`.
 
 After extracting the ZIP file, you should have a folder named:
 
-``` text
+```text
 MRWK
 ```
 
 Do not rename this folder.
 
-### Step 2 --- Open Lunite-Client-Hd.jar
+### Step 2 --- Locate Lunite-Client-Hd.jar
+
+Open the Lunite Client folder:
+
+```text
+%APPDATA%\Lunite-Repo
+```
+
+Locate:
+
+```text
+Lunite-Client-Hd.jar
+```
+
+### Step 3 --- Open Lunite-Client-Hd.jar
 
 Open `Lunite-Client-Hd.jar` using **WinRAR**.
 
 You do **not** need to extract the `.jar` file. Simply open it directly
 with WinRAR.
 
-### Step 3 --- Navigate to the Plugins folder
+### Step 4 --- Navigate to the Plugins folder
 
 Inside `Lunite-Client-Hd.jar`, navigate to:
 
-``` text
+```text
 net\runelite\client\plugins
 ```
 
-### Step 4 --- Add MRWK
+### Step 5 --- Add MRWK
 
 Drag the complete `MRWK` folder into:
 
-``` text
+```text
 net\runelite\client\plugins
 ```
 
 Your folder structure should look like this:
 
-``` text
+```text
 Lunite-Client-Hd.jar
 └── net
     └── runelite
@@ -63,6 +117,8 @@ Lunite-Client-Hd.jar
 
 **Important:** Make sure the complete `MRWK` folder is placed directly
 inside the `plugins` folder.
+
+Do **not** place `MRWK` inside another folder.
 
 ## Starting the Client
 
@@ -111,12 +167,24 @@ If the plugins do not appear, check the following:
 1.  Make sure `MRWK.zip` was extracted completely.
 2.  Make sure the extracted folder is named **MRWK**.
 3.  Make sure you added the **entire MRWK folder**.
-4.  Make sure `MRWK` is located inside: `net\runelite\client\plugins`
-5.  Fully restart the Lunite Client after installing the plugin.
-6.  Make sure you are using the correct `Lunite-Client-Hd.jar`.
+4.  Make sure `MRWK` is located directly inside:
+
+```text
+net\runelite\client\plugins
+```
+
+5.  Make sure you opened the correct `Lunite-Client-Hd.jar`.
+6.  Make sure the JAR is located in:
+
+```text
+%APPDATA%\Lunite-Repo
+```
+
+7.  Fully restart the Lunite Client after installing the plugin.
+8.  Make sure you are using the correct **Lunite Client** installation.
 
 If the plugins are still not showing, double-check that your folder
-structure matches the example above.
+structure inside `Lunite-Client-Hd.jar` matches the example above.
 
 ## Help & Support
 
